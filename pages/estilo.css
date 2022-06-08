@@ -1,0 +1,152 @@
+@font-face {
+    font-family: LetraRataBlanca;
+    src: url(OldLondon.ttf);
+}
+.LogoRataBlanca
+{
+    font-family: LetraRataBlanca;
+    font-size: 50px;
+    color: white;
+}
+body
+{
+    background-color: black;
+}
+header
+{
+    text-align: center;
+}
+nav
+{
+    text-align: center;
+}
+ul
+{
+    display: inline;
+    text-align: center;
+    border: 10px;
+    border-color: red;
+}
+p
+{
+    color: gray;
+}
+main
+{
+position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+footer
+{
+position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+form
+{
+position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: grey;
+}
+.pform
+{
+    color: white;
+}
+img
+{
+position: relative;
+display: block;
+margin: 0px auto;
+height: 50%;
+width: 50%;
+}
+td
+{
+    color: white;
+}
+.doscolumnas
+{
+    column-count: 2;
+}
+div {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px;
+  }
+
+@media screen and (max-width: 480px) /*Cambia para celulares*/
+{
+    .botonnav {
+        width: auto;
+    }
+      .botonnav ul {
+        display: block;
+      }
+}
+
+#padre {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "nav"
+     "main"
+     "footer";
+   grid-template-rows: auto; 
+   grid-template-columns: auto;
+}
+header {
+   grid-area: header;
+}
+nav {
+   grid-area: nav;
+}
+main {
+   grid-area: main;
+}
+footer {
+   grid-area: footer;
+}
+/*Aplicando Gradiente a algunos fondos*/
+.grad
+{
+    background-image: linear-gradient(grey,black);
+}
+/*Aplicando transformaciones*/
+h1
+{
+    transform: rotate(-10deg);
+}
+/*Aplicando animaciones*/
+a
+{
+    transition: all 1s;
+}
+a:hover
+{
+    background-color: white;
+    color: black;
+}
+h1
+{
+    animation-duration: 4s;
+    animation-name: animacionLogo;
+    animation-iteration-count: infinite;
+}
+@keyframes animacionLogo
+{
+    0%{opacity: 0; transform: skewX(0deg);}
+    25%{opacity: 0,5;transform: skewX(90deg);}
+    50%{opacity: 1;transform: skewX(180deg);}
+    75%{opacity: 0,5;transform: skewX(270deg);}
+    100%{opacity: 0;transform: skewX(360deg);}
+}
