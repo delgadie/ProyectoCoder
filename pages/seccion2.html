@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrantes</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-    <div class="padre">
-    <div>
-    <header>
-        <h1 class="LogoRataBlanca">Rata Blanca</h1>
-    </header>
-</div>
-    <div>
-    <nav class="botonnav">
-        <ul><a href=../index.html>Inicio</a></ul>
-        <ul><a href=seccion2.html>Integrantes</a></ul>
-        <ul><a href=seccion3.html>Discografía</a></ul>
-        <ul><a href=seccion4.html>Historia</a></ul>
-        <ul><a href=seccion5.html>Contactos</a></ul>
+<body class="bg-dark">
+    <div class="container-fluid p-2 bg-dark text-white text-center">
+        <h1>Rata Blanca</h1>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link active" href="seccion2.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="seccion3.html">Discografía</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="seccion4.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seccion5.html">Contactos</a>
+              </li>
+          </ul>
+        </div>
     </nav>
 </div>
-<div>
-    <main>
-    <div>
-        <img src="https://www.kmon.info/image.php?file=fichero_254912_20211125.jpg&ancho=220&alto=220&corto=0" alt="Integrantes">
-    </div>
+<main class="bg-secondary bg-gradient m-0 vh-100 row justify-content-center align-items-center text-center">
+    <img class="img-thumbnail img-fluid" src="https://www.kmon.info/image.php?file=fichero_254912_20211125.jpg&ancho=220&alto=220&corto=0" alt="Integrantes">
 </main>
+<footer class="bg-dark text-center text-lg-start fixed-bottom">
+<div class="text-center p-3 text-white">
+    Desafío Maquetando con Bootstrap - Desarrollo Web - Diego Delgado
 </div>
-<div>
-    <footer>
-        Desafío 1 - Desarrollo Web - Diego Delgado
-    </footer>
-</div>
+</footer>
 </div>
 </body>
 </html>
