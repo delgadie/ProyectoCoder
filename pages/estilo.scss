@@ -1,0 +1,127 @@
+/*Cambia para celulares*/
+@media screen and (max-width: 480px)
+{
+    .botonnav {
+        width: auto;
+    }
+      .botonnav ul {
+        display: block;
+      }
+}
+/*Aplicando fuente externa*/
+@font-face {
+    font-family: LetraRataBlanca;
+    src: url(OldLondon.ttf);
+}
+
+/*Clases*/
+.LogoRataBlanca
+{
+    font-family: LetraRataBlanca;
+    font-size: 50px;
+    color: white;
+}
+.pform
+{
+    color: white;
+}
+.doscolumnas
+{
+    column-count: 2;
+}
+
+/*Aplicando GRID*/
+#padre {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-rows: auto; 
+    grid-template-columns: auto;
+ }
+/*Usando Variables*/
+$colorfondo:black;
+$letrarata:white;
+
+/*Aplicando SASS*/
+body
+{
+    background-color: $colorfondo;
+    header
+    {
+        text-align: center;
+        grid-area: header;
+    }
+    nav
+    {
+        text-align: center;
+        grid-area: nav;
+    }
+    main
+    {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $letrarata;
+    text-align: center;
+    grid-area: main;
+        div {
+        border: 1px solid grey;
+        padding: 10px;
+        margin: 20px;
+         }
+        form
+        {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        }
+        ul
+        {
+        display: inline;
+        text-align: center;
+        border: 10px;
+        border-color: red;
+        &hover{
+            color:violet;
+        }
+        }
+        p
+        {
+            color: gray;
+        }
+        img
+        {
+        position: relative;
+        display: block;
+        margin: 0px auto;
+        height: 50%;
+        width: 50%;
+        &hover{
+            filter: grayscale(100%);
+            transition: width 2s;
+        }
+        }
+        td
+        {
+            color: $letrarata;
+        }
+        }
+    footer
+    {
+    position:relative;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       color: $letrarata;
+       text-align: center;
+       background-color: $colorfondo;
+       grid-area: footer;
+    }
+}
