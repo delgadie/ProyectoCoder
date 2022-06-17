@@ -1,152 +1,137 @@
-@font-face {
-    font-family: LetraRataBlanca;
-    src: url(OldLondon.ttf);
-}
-.LogoRataBlanca
-{
-    font-family: LetraRataBlanca;
-    font-size: 50px;
-    color: white;
-}
-body
-{
-    background-color: black;
-}
-header
-{
-    text-align: center;
-}
-nav
-{
-    text-align: center;
-}
-ul
-{
-    display: inline;
-    text-align: center;
-    border: 10px;
-    border-color: red;
-}
-p
-{
-    color: gray;
-}
-main
-{
-position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
-   text-align: center;
-}
-footer
-{
-position:relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
-   text-align: center;
-}
-form
-{
-position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
-   background-color: grey;
-}
-.pform
-{
-    color: white;
-}
-img
-{
-position: relative;
-display: block;
-margin: 0px auto;
-height: 50%;
-width: 50%;
-}
-td
-{
-    color: white;
-}
-.doscolumnas
-{
-    column-count: 2;
-}
-div {
-    border: 1px solid grey;
-    padding: 10px;
-    margin: 20px;
+/*Cambia para celulares*/
+@media screen and (max-width: 480px) {
+  .botonnav {
+    width: auto;
   }
-
-@media screen and (max-width: 480px) /*Cambia para celulares*/
-{
-    .botonnav {
-        width: auto;
-    }
-      .botonnav ul {
-        display: block;
-      }
+  .botonnav ul {
+    display: block;
+  }
 }
 
+/*Aplicando fuente externa*/
+@font-face {
+  font-family: LetraRataBlanca;
+  src: url(OldLondon.ttf);
+}
+
+/*Clases*/
+.LogoRataBlanca {
+  font-family: LetraRataBlanca;
+  font-size: 50px;
+  color: white;
+}
+
+.pform {
+  color: white;
+}
+
+.doscolumnas {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+/*Aplicando GRID*/
 #padre {
-   display: grid;
-   grid-template-areas:
-     "header"
-     "nav"
-     "main"
-     "footer";
-   grid-template-rows: auto; 
-   grid-template-columns: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "nav" "main" "footer";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
-header {
-   grid-area: header;
+
+/*Usando Variables*/
+/*Aplicando SASS*/
+body {
+  background-color: black;
 }
-nav {
-   grid-area: nav;
+
+body header {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
 }
-main {
-   grid-area: main;
+
+body nav {
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
 }
-footer {
-   grid-area: footer;
+
+body main {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
 }
-/*Aplicando Gradiente a algunos fondos*/
-.grad
-{
-    background-image: linear-gradient(grey,black);
+
+body main div {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 20px;
 }
-/*Aplicando transformaciones*/
-h1
-{
-    transform: rotate(-10deg);
+
+body main form {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
 }
-/*Aplicando animaciones*/
-a
-{
-    transition: all 1s;
+
+body main ul {
+  display: inline;
+  text-align: center;
+  border: 10px;
+  border-color: red;
 }
-a:hover
-{
-    background-color: white;
-    color: black;
+
+body main ulhover {
+  color: violet;
 }
-h1
-{
-    animation-duration: 4s;
-    animation-name: animacionLogo;
-    animation-iteration-count: infinite;
+
+body main p {
+  color: gray;
 }
-@keyframes animacionLogo
-{
-    0%{opacity: 0; transform: skewX(0deg);}
-    25%{opacity: 0,5;transform: skewX(90deg);}
-    50%{opacity: 1;transform: skewX(180deg);}
-    75%{opacity: 0,5;transform: skewX(270deg);}
-    100%{opacity: 0;transform: skewX(360deg);}
+
+body main img {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  height: 50%;
+  width: 50%;
 }
+
+body main imghover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body main td {
+  color: white;
+}
+
+body footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: black;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+/*# sourceMappingURL=estilo.css.map */
