@@ -1,0 +1,14 @@
+Aplicación de SEO:
+
+Se agregan Keywords
+<meta name="keywords" content="rata blanca, rock, heavy metal, página oficial">
+
+Se agregan Descripciones
+
+Titles ya tenian todas las páginas
+No veo necesidad de agregar Encabezados por el momento
+
+Mapa en footer para guia del usuario en la página
+Mapa en archivo xml
+Mixin - Para aplicar color invertido al parrafo (p)
+Extend Para aplicar color a la propiedad botón del formulario, se aplicaron dos colores de botones.
