@@ -1,0 +1,59 @@
+/*Cambia para celulares*/
+@media screen and (max-width: 480px) {
+  .botonnav {
+    width: auto;
+  }
+  .botonnav ul {
+    display: block;
+  }
+}
+
+/*Mixin*/
+h1 {
+  color: lightblue;
+}
+
+p {
+  color: blue;
+}
+
+th {
+  color: yellow;
+}
+
+/*Clases*/
+.LogoRataBlanca {
+  font-family: LetraRataBlanca;
+  font-size: 50px;
+  color: white;
+}
+
+.pform {
+  color: white;
+}
+
+.columnas {
+  padding: 20px;
+  font-size: small;
+}
+
+.iconos i {
+  color: white;
+}
+
+.boton, .boton--enviar, .boton--limpiar {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+.boton--enviar {
+  background-color: green;
+  color: white;
+}
+
+.boton--limpiar {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=estilo.css.map */

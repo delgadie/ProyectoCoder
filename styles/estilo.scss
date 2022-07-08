@@ -1,0 +1,72 @@
+/*Cambia para celulares*/
+@media screen and (max-width: 480px) {
+    .botonnav {
+      width: auto;
+    }
+    .botonnav ul {
+      display: block;
+    }
+  }
+/*Mixin*/
+@mixin encabezado ($color)
+{
+  color: $color;
+}
+@mixin parrafo ($color)
+{
+  color: $color;
+}
+@mixin tabla ($color)
+{
+  color: $color;
+}
+
+  h1
+  {
+    @include encabezado (lightblue);
+  }
+  p
+  {
+    @include parrafo (blue);
+  }
+  th
+  {
+    @include tabla (yellow);
+  }
+  /*Clases*/
+  .LogoRataBlanca {
+    font-family: LetraRataBlanca;
+    font-size: 50px;
+    color: white;
+  }
+  
+  .pform {
+    color: white;
+  }
+  
+  .columnas {
+    padding: 20px;
+    font-size: small;
+  }
+  .iconos i
+  {
+    color:white
+  }
+  .boton {
+      background-color:white;
+      text-align:center;
+      color:black;
+  }
+  
+  .boton--enviar{
+      @extend .boton;
+      background-color:green;
+      color:white;
+  }
+  
+  .boton--limpiar{
+      @extend .boton;
+      background-color:red;
+      color:white;
+  }
+
