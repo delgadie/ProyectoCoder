@@ -1,14 +1,45 @@
 Aplicación de SEO:
 
-Se agregan Keywords
+Se agregan Keywords a todas las paginas
+---------------------------------------
+Index
 <meta name="keywords" content="rata blanca, rock, heavy metal, página oficial">
-
+Integrantes
+<meta name="keywords" content="rata blanca, rock, heavy metal, página oficial, integrantes de rata blanca">
+Historia
+<meta name="keywords" content="rata blanca, rock, heavy metal, página oficial, historia de rata blanca">
+Discografia
+<meta name="keywords" content="rata blanca, rock, heavy metal, página oficial, discografia de rata blanca">
+Contacto
+<meta name="keywords" content="rata blanca, rock, heavy metal, página oficial, contacto con la página oficial de Rata Blanca">
+    
 Se agregan Descripciones
+------------------------
+Index
+<meta name="description" content="Aquí podrás encontrar toda la información oficial de Rata Blanca. Desde la historia e integrantes hasta eventos de la banda.">
+Integrantes
+<meta name="description" content="Integrantes de la banda Rata Blanca.">
+Historia
+<meta name="description" content="Historia de Rata Blanca.">
+Discografia
+<meta name="description" content="Discografía completa de Rata Blanca.">
+Contacto
+<meta name="description" content="Contacto con la página oficial de Rata Blanca.">
 
-Titles ya tenian todas las páginas
+Titles
+------
+Ya tenían todas las páginas.
 No veo necesidad de agregar Encabezados por el momento
 
+Map
+---
 Mapa en footer para guia del usuario en la página
 Mapa en archivo xml
-Mixin - Para aplicar color invertido al parrafo (p)
-Extend Para aplicar color a la propiedad botón del formulario, se aplicaron dos colores de botones.
+
+Mixin
+-----
+Para aplicar colores a los diferentes textos (h1,p,th)
+
+Extend
+------
+Para aplicar color a la propiedad botón del formulario, se aplicaron dos colores de botones.
